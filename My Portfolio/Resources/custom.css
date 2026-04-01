@@ -360,3 +360,127 @@ body {
         font-size: 1rem !important;
     }
 }
+/* Base styles (desktop first) */
+.bg-soft-primary {
+    background-color: #f8f9fa;
+}
+
+.bg-pink {
+    background-color: #f8c8dc;
+}
+
+.litBoxBig {
+    position: relative;
+}
+
+.litBox {
+    position: absolute;
+    bottom: -50px;
+    left: 10%;
+    width: 80%;
+}
+
+.b-stuff {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+/* Form width fix */
+form {
+    max-width: 500px;
+}
+
+/* ========================= */
+/* TABLET (≤ 992px) */
+/* ========================= */
+@media (max-width: 992px) {
+
+    .col-md-10,
+    .col-md-2 {
+        width: 100%;
+    }
+
+    form {
+        width: 100% !important;
+        margin-left: 0 !important;
+    }
+
+    .litBox {
+        position: static;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .b-stuff {
+        flex-direction: row;
+        justify-content: center;
+        padding: 20px 0;
+    }
+}
+
+/* ========================= */
+/* MOBILE (≤ 768px) */
+/* ========================= */
+@media (max-width: 768px) {
+
+    .container {
+        margin-top: 20px !important;
+        padding: 10px;
+    }
+
+    .bg-pink {
+        padding: 20px !important;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    form {
+        width: 100% !important;
+    }
+
+    .litBox {
+        padding: 20px !important;
+    }
+
+    .b-stuff i {
+        font-size: 1.5rem;
+        margin: 0 10px;
+    }
+
+    footer .row > div {
+        margin-bottom: 20px;
+    }
+}
+
+/* ========================= */
+/* SMALL MOBILE (≤ 576px) */
+/* ========================= */
+@media (max-width: 576px) {
+
+    h2 {
+        font-size: 1.3rem;
+    }
+
+    span,
+    small {
+        font-size: 0.9rem;
+    }
+
+    .btn {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+
+    .b-stuff {
+        flex-wrap: wrap;
+    }
+
+    .b-stuff i {
+        margin-bottom: 10px;
+    }
+}
